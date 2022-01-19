@@ -6,46 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div.grand {
-            position: relative;
-            width: 800px;
-            height: 400px;
-            top: 100px;
-            background: rgb(225, 174, 65);
-        } 
-
-        div.parent {
-            width: 400px;
-            height: 200px;
-            background: royalblue;
-        } 
-
-        div.child1 {
+        .absolute.parent1 {
             position: absolute;
             top: 80px;
-            right: 150px;
-            width: 200px;
+            left: 100px;
+            width: 100px;
             height: 100px;
             background: salmon;
         }
 
-        div.child2 {
+        .absolute.parent2 {
             position: absolute;
             top: 80px;
-            right: 100px;
+            left: 200px;
+            width: 150px;
+            height: 100px;
+            background: saddlebrown;
+        }
+
+        .absolute.parent3 {
+            position: absolute;
+            top: 80px;
+            left: 300px;
             width: 200px;
             height: 100px;
-            background: rgb(170, 245, 152);
+            background: skyblue;
         }
     </style>
 
 </head>
 <body>
-    <div class="grand">
-        <div class="parent">
-            <div class="child1">1</div>
-            <div class="child2">2</div>
-        </div>
-    </div>
+    <div class="absolute parent1">1</div>
+    <div class="absolute parent2">2</div>
+    <div class="absolute parent3">3</div>
 </body>
 </html>

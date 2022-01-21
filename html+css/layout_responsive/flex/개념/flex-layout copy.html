@@ -1,0 +1,186 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>Document</title>
+<!-- https://www.starbucks.co.kr/index.do -->
+<style>
+*{margin:0; padding:0;}
+a { text-decoration: none !important; }
+img { border: 0; }
+ul { list-style: none; }
+
+/* PC */
+.wrap{
+	background: wheat;
+}
+
+.header{
+
+}
+
+.header__nav {
+	max-width: 1200px;
+	background:#9de25c;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+
+.header__nav > h1{
+	width: 100px;
+	height: 120px;
+	background:#9de25c;
+}
+
+.header__nav > nav{
+	/* 1100px ÷ 1200px */
+	width: calc(100% - 100px);
+	background:#ff6b57;
+	height: 120px;
+}
+
+section .con {
+	max-width: 1440px;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.slider{
+height: 480px;
+}
+
+.slider__content {
+	background: thistle;
+}
+
+.youtube{
+height: 605px;
+}
+
+.youtube__content {
+	background:tomato;
+}
+
+.sns{
+height: 160px;
+}
+
+.sns__content {
+	background: turquoise;
+}
+
+.sns__content > ul {
+	display: flex;
+	flex-direction: row;
+}
+
+.sns__content > ul > li {
+	flex: 1;
+	text-align: center;
+}
+
+.guide{
+	height: 480px;
+}
+
+.guide__content {
+	display: flex;
+	flex-direction: row;
+	/* background: yellowgreen; */
+}
+
+.guide__content > div {
+	flex: 1;
+	text-align: center;
+}
+
+.guide__content > div:nth-child(1) {
+	background: hotpink;
+}
+
+.guide__content > div:nth-child(2) {
+	background:indianred;
+}
+
+.store{
+height: 597px;
+}
+
+.store__content {
+	background: honeydew;
+}
+
+.banner{
+height: 200px;
+}
+
+.banner__content {
+	background: gray;
+}
+
+.footer{
+height:680px;
+background:#474747;
+}
+
+/* 모바일 */
+@media screen and (max-width: 767px) {
+
+}
+
+/* 테블릿 */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+
+}
+
+
+
+
+</style>
+</head>
+<body>
+	<header class="header">
+		<div class="header__nav">
+			<h1>logo</h1>
+			<nav>
+				<ul></ul>
+				<div></div>
+			</nav>
+		</div>
+	</header>
+	<div class="wrap">
+		<section class="slider">
+			<div class="slider__content con">
+				<!-- <img src="./img/slider.png" alt="" srcset=""> -->
+			</div>
+		</section>
+		<section class="youtube">
+			<div class="youtube__content con"></div>
+		</section>
+		<section class="sns">
+			<div class="sns__content con">
+				<ul class="sns__content__list">
+					<li>youtube</li>
+					<li>facebook</li>
+					<li>instgram</li>
+				</ul>
+			</div>
+		</section>
+		<section class="guide">
+			<div class="guide__content con">
+				<div class="guide__content__app">app</div>
+				<div class="guide__content__delivery">deli</div>
+			</div>
+		</section>
+		<section class="store">
+			<div class="store__content con"></div>
+		</section>
+		<section class="banner">
+			<div class="banner__content con"></div>
+		</section>
+	</div>
+	<footer class="footer"></footer>
+</body>
+</html>

@@ -11,6 +11,10 @@ a { text-decoration: none !important; }
 img { border: 0; }
 ul { list-style: none; }
 
+header, footer, section {
+	box-sizing:border-box;
+}
+
 /* PC */
 .wrap{
 	background: wheat;
@@ -39,6 +43,16 @@ ul { list-style: none; }
 	width: calc(100% - 100px);
 	background:#ff6b57;
 	height: 120px;
+}
+
+.header__nav > nav > ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.header__nav > .delivery-btn {
+	width: 168px;
 }
 
 section .con {
@@ -96,11 +110,11 @@ height: 160px;
 	text-align: center;
 }
 
-.guide__content > div:nth-child(1) {
+.guide__content > .guide__content__app {
 	background: hotpink;
 }
 
-.guide__content > div:nth-child(2) {
+.guide__content > .guide__content__delivery {
 	background:indianred;
 }
 
@@ -110,6 +124,15 @@ height: 597px;
 
 .store__content {
 	background: honeydew;
+}
+
+.store__content ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	/* 1144 ÷ 1440 */
+	width: 79.44%;
+	margin: 0 auto;
 }
 
 .banner{
@@ -126,7 +149,33 @@ background:#474747;
 }
 
 /* 모바일 */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 320px) {
+	.guide__content {
+		flex-direction: column
+	}
+
+	.store__content ul {
+		display: table;
+	}
+
+	.store__content ul li {
+		display: table-cell;
+	}
+}
+
+/* 모바일 ~ 테블릿 */
+@media screen and (min-width: 321px) and (max-width: 767px) {
+	.guide__content {
+		flex-direction: column;
+	}
+
+	.guide__content > .guide__content__app {
+		
+	}
+
+	.guide__content > .guide__content__delivery {
+		
+	}
 
 }
 
@@ -145,9 +194,14 @@ background:#474747;
 		<div class="header__nav">
 			<h1>logo</h1>
 			<nav>
-				<ul></ul>
-				<div></div>
+				<ul>
+					<li>메뉴소개</li>
+					<li>매장소개</li>
+					<li>이벤트</li>
+					<li>브랜드스토리</li>
+				</ul>
 			</nav>
+			<div class="delivery-btn">딜리버리 주문</div>
 		</div>
 	</header>
 	<div class="wrap">
@@ -175,7 +229,17 @@ background:#474747;
 			</div>
 		</section>
 		<section class="store">
-			<div class="store__content con"></div>
+			<div class="store__content con">
+				<div>매장찾기</div>
+				<ul>
+					<li>딜리버리</li>
+					<li>킹오더</li>
+					<li>드라이브 스루</li>
+					<li>24시간</li>
+					<li>아침메뉴</li>
+					<li>주차공간</li>
+				</ul>
+			</div>
 		</section>
 		<section class="banner">
 			<div class="banner__content con"></div>

@@ -1,0 +1,70 @@
+@charset "utf-8";
+@import url('./reset.css');
+/* header, footer, reset */
+
+/* 모바일: 0~766px */
+.header__nav {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+}
+
+.header__nav > h1{
+	width: 100px;
+	height: 120px;
+	line-height: 120px;
+}
+
+.header__nav > h1 .logo {
+	vertical-align: middle;
+}
+
+.header__nav > nav{
+	/* 1100px ÷ 1200px */
+	width: calc(100% - 100px);
+	background:#ff6b57;
+	height: 120px;
+}
+
+.header__nav > nav > ul {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.header__nav > .delivery-order {
+	width: 168px;
+}
+
+.header__nav > .delivery-order > .button {
+	border-radius: 35px;
+}
+
+.button--shape {
+	background-color: #e91b1b; /* Green */
+	border: none;
+	color: white;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+  }
+
+.footer{
+	height:680px;
+	background:#474747;
+}
+
+/* 테블릿: 767px 이상*/
+@media all and (min-width:767px){
+
+}
+
+/* pc: 1024px 이상 */
+@media all and (min-width:1024px){ 
+
+}

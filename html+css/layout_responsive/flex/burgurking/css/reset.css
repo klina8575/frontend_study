@@ -22,6 +22,8 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	font-family: 'Jua', sans-serif;
+	/* font-family: 'Nanum Gothic Coding', monospace; */
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -45,6 +47,10 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+a { text-decoration: none !important; 
+	color: black;
 }
 
 /* haseo: 추가 */

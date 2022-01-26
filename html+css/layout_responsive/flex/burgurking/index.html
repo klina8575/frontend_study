@@ -6,34 +6,49 @@
 <title>Document</title>
 <link rel="stylesheet" href="./css/common.css">
 <link rel="stylesheet" href="./css/main.css">
-</head>
+<link rel="stylesheet" href="./library/swiper/swiper.css"></head>
 <body>
 	<header class="header">
 		<div class="header__nav">
 			<h1>
 				<a href="./index.html"><img src="./img/logo.gif" alt="로고" class="logo"></a>
 			</h1>
-			<nav>
-				<ul>
-					<li>메뉴소개</li>
-					<li>매장소개</li>
-					<li>이벤트</li>
-					<li>브랜드스토리</li>
-				</ul>
-			</nav>
-			<div class="delivery-order">
-				<button class="button button--shape">딜리버리 주문</button>
+			<div class="menu">
+				<nav>
+					<ul>
+						<li>메뉴소개</li>
+						<li>매장소개</li>
+						<li>이벤트</li>
+						<li>브랜드스토리</li>
+					</ul>
+				</nav>
+				<div class="delivery-order">
+					<button class="button button--shape">딜리버리 주문</button>
+				</div>
 			</div>
 		</div>
 	</header>
 	<div class="wrap">
 		<section class="slider">
 			<div class="slider__content con">
-				<!-- <img src="./img/slider.png" alt="" srcset=""> -->
+				<div class="swiper-container main-swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide slide1"></div>
+						<div class="swiper-slide slide2"></div>
+						<div class="swiper-slide slide3"></div>
+					</div>
+					<!-- Add Arrows -->
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					    <!-- Add Pagination -->
+    				<div class="swiper-pagination"></div>
+				</div>
 			</div>
 		</section>
 		<section class="youtube">
-			<div class="youtube__content con"></div>
+			<div class="youtube__content con">
+				<iframe width="100%" height="605" src="https://www.youtube.com/embed/oDiBd7QpBFY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
 		</section>
 		<section class="sns">
 			<div class="sns__content con">
@@ -68,5 +83,27 @@
 		</section>
 	</div>
 	<footer class="footer"></footer>
+	<script src="./library/swiper/swiper.min.js"></script>
+	<script>
+		var swiper1 = new Swiper('.main-swiper', {
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				type: 'bullets',
+			},
+			autoplay: {
+				delay: 3000,
+			},
+			speed: 800,
+			on: {
+				init: function () {
+					console.log('swiper1 initialized');
+				},
+			},
+		});
+	</script>
 </body>
 </html>

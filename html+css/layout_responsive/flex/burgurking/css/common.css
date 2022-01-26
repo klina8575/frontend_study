@@ -20,36 +20,45 @@
 	vertical-align: middle;
 }
 
-.header__nav > nav{
-	/* 1100px ÷ 1200px */
+.header__nav > .menu {
 	width: calc(100% - 100px);
-	background:#ff6b57;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 	height: 120px;
+} 
+
+.header__nav nav{
+	/* 1100px ÷ 1200px */
+	width: calc(100% - 168px);
 }
 
-.header__nav > nav > ul {
+.header__nav nav > ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
+	margin-top: 20px;
+	font-size: 1.3em;
 }
 
-.header__nav > .delivery-order {
+.header__nav .delivery-order {
 	width: 168px;
 }
 
-.header__nav > .delivery-order > .button {
+.header__nav .delivery-order > .button {
 	border-radius: 35px;
+	margin-top: 15px;
+	font-size: 1.2em;	
 }
 
 .button--shape {
 	background-color: #e91b1b; /* Green */
 	border: none;
 	color: white;
-	padding: 10px;
+	padding: 12px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
-	font-size: 16px;
 	margin: 4px 2px;
 	cursor: pointer;
   }

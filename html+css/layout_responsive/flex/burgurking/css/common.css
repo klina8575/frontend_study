@@ -4,11 +4,23 @@
 @import url('./reset.css');
 /* header, footer, reset */
 
-.button--shape {
-	background-color: #e91b1b; /* Green */
+.button--shape-red {
+	background-color: #e91b1b; 
 	border: none;
 	color: white;
 	padding: 12px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+  }
+
+  .button--shape-beige {
+	background-color: transparent; 
+	border: 1px solid rgb(122, 122, 98);
+	color: white;
+	padding: 9px;
 	text-align: center;
 	text-decoration: none;
 	display: inline-block;
@@ -39,49 +51,34 @@
 	margin: 0 auto;
 	display: flex;
 	flex-direction: row;
-}
-
-.header__nav > h1{
-	width: 100px;
+	justify-content: space-between;
 	height: 120px;
-	line-height: 120px;
 }
 
-.header__nav > h1 .logo {
-	vertical-align: middle;
+.header__nav > div, .header__nav > h1 {
+	width: 33.33%;
+}
+
+.header__nav > h1 {
+	text-align: center;
 }
 
 .header__nav > .menu {
-	width: calc(100% - 100px);
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	height: 120px;
-} 
-
-.header__nav nav{
-	/* 1100px ÷ 1200px */
-	width: calc(100% - 168px);
+	/* text-align: right; */
 }
 
-.header__nav nav > ul {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	/* margin-top: 20px; */
-	font-size: 1.3em;
-	height: 70px;
-	padding-top: 50px;
+.header__nav > .trigger > .mobile.close {
+	display: none;
 }
 
-.header__nav .delivery-order {
-	width: 168px;
+.header__nav .menu__main {
+	display: none;
 }
 
 .header__nav .delivery-order > .button {
 	border-radius: 35px;
 	margin-top: 15px;
-	font-size: 1.2em;	
+	font-size: 0.5em;	
 }
 
 .footer{
@@ -147,6 +144,12 @@
 	padding-right: 20px;
 }
 
+.footer__level2 .button-line > button {
+	border-radius: 35px;
+	margin-top: 15px;
+	font-size: 0.8em;	
+}
+
 .footer__level2 .address-line {
 	padding: 50px 10px 0;
 }
@@ -170,19 +173,58 @@
 
 /* 테블릿: 767px 이상*/
 @media all and (min-width:767px){
+	.header__nav > .menu {
+		width: calc(100% - 100px);
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		height: 120px;
+	} 
+	
+	.header__nav nav{
+		/* 1100px ÷ 1200px */
+		width: calc(100% - 168px);
+	}
+	
+	.header__nav nav > .menu__main {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		/* margin-top: 20px; */
+		font-size: 1.3em;
+		height: 70px;
+		/* padding-top: 50px; */
+		padding: 50px 60px 0;
+	}
+	
+	.header__panel {
+		height: 280px;
+		display: none;
+	}
+	
+	.header__nav .delivery-order {
+		width: 168px;
+	}
+	
+	.header__nav .delivery-order > .button {
+		border-radius: 35px;
+		margin-top: 15px;
+		font-size: 1.2em;	
+	}
+	
 	.header__nav > .menu .main__list {
 		position: relative;
 	}
 
-	.header__nav > .menu .main__list:hover .list__drop {
+	/* .header__nav > .menu .main__list:hover .list__drop {
 		display: block;
-	}
+	} */
 
 	.header__nav > .menu .main__list .list__drop {
 		display: none;
 		position: absolute;
 		top: 60px;
-		background: white;
+		/* background: white; */
 		width: 232px;
 		height: 260px;
 	}
@@ -194,6 +236,21 @@
 		font-weight: bold;
 		color: rgb(26, 26, 26);
 	}
+
+	.header__nav > h1{
+		width: 100px;
+		height: 120px;
+		line-height: 120px;
+	}
+	
+	.header__nav > h1 .logo {
+		vertical-align: middle;
+	}
+
+	.header__nav > .trigger {
+		display: none;
+	}
+	
 
 	.footer{
 		height:680px;

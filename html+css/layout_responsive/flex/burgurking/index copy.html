@@ -12,6 +12,10 @@
 <body>
 	<header class="header">
 		<div class="header__nav">
+			<div class="trigger">
+				<a href="#" class="mobile hamburger"><i class="fas fa-bars fa-lg"></i></a>
+				<a href="#" class="mobile close"><i class="fas fa-times fa-lg"></i></a>
+			</div>
 			<h1>
 				<a href="./index.html"><img src="./img/logo.gif" alt="로고" class="logo"></a>
 			</h1>
@@ -19,7 +23,7 @@
 				<nav>
 					<ul class="menu__main">
 						<li class="main__list">
-							메뉴소개
+							<a href="#">메뉴소개</a>
 							<div>
 								<ul class="list__drop">
 									<li>스페셜&할인팩</li>
@@ -34,7 +38,7 @@
 							</div>
 						</li>
 						<li class="main__list">
-							매장소개
+							<a href="#">매장소개</a>
 							<div>
 								<ul class="list__drop">
 									<li>매장찾기</li>
@@ -42,7 +46,7 @@
 							</div>
 						</li>
 						<li class="main__list">
-							이벤트
+							<a href="#">이벤트</a>
 							<div>
 								<ul class="list__drop">
 									<li>이벤트</li>
@@ -50,7 +54,7 @@
 							</div>
 						</li>
 						<li class="main__list">
-							브랜드스토리
+							<a href="#">브랜드스토리</a>
 							<div>
 								<ul class="list__drop">
 									<li>버거킹 스토리</li>
@@ -62,10 +66,11 @@
 					</ul>
 				</nav>
 				<div class="delivery-order">
-					<button class="button button--shape">딜리버리 주문</button>
+					<button class="button button--shape-red">딜리버리 주문</button>
 				</div>
 			</div>
 		</div>
+		<div class="header__panel"></div>
 	</header>
 	<div class="wrap">
 		<section class="slider">
@@ -140,7 +145,7 @@
 					<h2>매장찾기</h2>
 					<p>고객님 주변에 있는 버거킹을 찾아보세요!</p>
 					<p>
-						<button class="button button--shape">매장찾기</button>
+						<button class="button button--shape-red">매장찾기</button>
 					</p>
 					<ul>
 						<li>
@@ -185,7 +190,7 @@
 					<p>딜리버리 전화주문 안내 10:00–22:00</p>
 					<p>연중무휴 (매장별로 상이할 수 있습니다.)</p>
 				</div>
-				<p class="phone">1599-0505</p>
+				<p class="phone"><i class="fas fa-phone-volume"></i> 1599-0505</p>
 			</div>
 		</section>
 	</div>
@@ -247,8 +252,8 @@
 						<li class="font--gothic">법적고지</li>
 					</ul>
 					<div class="button-line">
-						<button>인재채용</button>
-						<button>가맹점 모집</button>
+						<button class="button--shape-beige">인재채용</button>
+						<button class="button--shape-beige">가맹점 모집</button>
 					</div>
 				</div>
 				<div class="address-line">
@@ -286,5 +291,6 @@
 			},
 		});
 	</script>
+	<script src="./js/common.js"></script>
 </body>
 </html>

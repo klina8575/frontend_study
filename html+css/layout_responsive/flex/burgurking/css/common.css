@@ -14,9 +14,9 @@
 	display: inline-block;
 	margin: 4px 2px;
 	cursor: pointer;
-  }
+}
 
-  .button--shape-beige {
+.button--shape-beige {
 	background-color: transparent; 
 	border: 1px solid rgb(122, 122, 98);
 	color: white;
@@ -26,9 +26,23 @@
 	display: inline-block;
 	margin: 4px 2px;
 	cursor: pointer;
-  }
+}
 
-  
+.button--shape-white {
+	background-color: #ffffff; 
+	border: none;
+	color: black;
+	padding: 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+
+
+
 .font--gothic {
 	font-family: 'Nanum Gothic Coding', monospace;
 }
@@ -156,7 +170,7 @@
 
 .footer__level2 .address-line > * {
 	text-align: left;
-	font-size: 0.9rem;
+	font-size: 0.8rem;
 }
 
 .footer__level2 .address-line > h2 {
@@ -230,7 +244,11 @@
 	}
 
 	.header__nav > .menu .main__list .list__drop > li {
-		padding: 7px;
+		padding: 5px 5px 5px 0;
+	}
+
+
+	.header__nav > .menu .main__list .list__drop > li > a {
 		font-size: 0.9rem;
 		font-family: 'Nanum Gothic Coding', monospace, sans-serif;
 		font-weight: bold;

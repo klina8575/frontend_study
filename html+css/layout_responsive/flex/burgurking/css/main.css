@@ -76,32 +76,49 @@ section .con {
 	background: #683a2f;
 }
 
-.sns__content > ul {
+.content__list {
 	display: flex;
 	flex-direction: row;
 	height: 100%;
 }
 
-.sns__content > ul > li {
+.content__list > li > a > .icon {
+	padding-right: 0px;
+	font-size: 3rem;
+}
+
+.content__list > li > a > .sns-txt {
+	text-align: center;
+}
+
+.content__list > li > a > .sns-txt > button {
+	border-radius: 5px;
+	margin-top: 10px;
+	font-size: 0.7em;
+	font-weight: bold;	
+}
+
+.content__list > li {
 	flex: 1;
 	text-align: center;
 	/* height: 100%; */
 }
 
-.sns__content > ul > li > a {
+.content__list > li > a {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	height: 100%;
 	width: 100%;
+	color: white;
 	/* line-height: 160px; */
 }
 
-.sns__content > ul > li > a > div > span {
+.content__list > li > a > div > span {
 	display: block;
 }
 
-.sns__content > ul > li > a > .fab {
+.content__list > li > a > .fab {
 	font-size: 3rem;
 	color: white;
 }
@@ -156,7 +173,7 @@ section .con {
 	font-size: 1em;	
 }
 
-.store__content > .search > h2, p {
+.store__content > .search > h2, .store__content > .search > p {
 	text-align: center;
 }
 
@@ -200,6 +217,11 @@ section .con {
 	display: none;
 }
 
+.store__content > .search > ul li > em {
+	/* font-size: 1.2rem; */
+	color: red;
+}
+
 .banner{
 	height: 200px;
 }
@@ -218,7 +240,7 @@ section .con {
 }
 
 .banner__content > .phone{
-	font-size: 3rem;
+	font-size: 2.5rem;
 	padding-left: 30px;
 }
 
@@ -271,7 +293,14 @@ section .con {
 
 	.store__content > .search > ul li > .search-txt {
 		display: block;
+		margin: 15px 0;
 	}
+
+	.store__content > .search > ul li > em {
+		font-size: 1.4rem;
+
+	}
+	
 
 	.banner__content {
 		flex-direction: row;
@@ -325,7 +354,7 @@ section .con {
 		background-position:center;
 	}
 
-	.sns__content > ul > li > a {
+	.content__list > li > a {
 		flex-direction: row;
 		align-items: center;
 		/* line-height: 160px; */
@@ -334,6 +363,18 @@ section .con {
 	.slider__content .swiper-container {
 		height: 380px;
 	}
+
+	.content__list > li > a > .icon {
+		font-size: 5rem;
+		padding-right: 10px;
+	}
+	
+	.content__list > li > a > .sns-txt {
+		text-align: left;
+	}
+
+
+	
 }
 
 /* pc: 1024px 이상 */

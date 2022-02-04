@@ -58,6 +58,7 @@
     width: 100%;
     z-index: 2;
     background: white;
+	box-shadow:0 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .header__Mnav {
@@ -74,6 +75,7 @@
 	/* padding: 20px 0 0 20px; */
 	background-color: white;
 	position: relative;
+	box-shadow:0 2px 3px rgba(0, 0, 0, 0.2);
 }
 
 .header__Mnav > .trigger > .mobile.close {

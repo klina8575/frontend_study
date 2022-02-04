@@ -3,7 +3,7 @@
 
 .wrap{
 	background: wheat;
-	padding-top: 120px;
+	padding-top: 60px;
 }
 
 section .con {
@@ -247,6 +247,10 @@ section .con {
 
 /* 테블릿: 767px 이상*/
 @media all and (min-width:767px){
+	.wrap{
+		padding-top: 120px;
+	}
+
 	.guide {
 		height: 380px;
 	}

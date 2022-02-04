@@ -66,8 +66,16 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
-	height: 120px;
+	height: 60px;
+	align-items: center;
+	padding: 0 12px;
 }
+
+/*
+	align-items : flex line을 기준으로 아이템을 정렬한다.
+	align-content: flex line을 정렬한다.(두줄 이상일때만)
+	https://letsgojieun.tistory.com/49
+*/
 
 .header__nav > div, .header__nav > h1 {
 	width: 33.33%;
@@ -77,8 +85,12 @@
 	text-align: center;
 }
 
-.header__nav > .menu {
-	/* text-align: right; */
+.header__nav > h1 img {
+	width: 50px;
+}
+
+.header__nav > .menu > .delivery-order {
+	text-align: right;
 }
 
 .header__nav > .trigger > .mobile.close {
@@ -91,8 +103,11 @@
 
 .header__nav .delivery-order > .button {
 	border-radius: 35px;
-	margin-top: 15px;
-	font-size: 0.5em;	
+	/* margin-top: 15px; */
+	font-size: 0.5em;
+	/* 우선순위 적용 */
+	padding: 8px;
+	font-weight: bold;	
 }
 
 .footer{
@@ -187,6 +202,14 @@
 
 /* 테블릿: 767px 이상*/
 @media all and (min-width:767px){
+	.header__nav {
+		height: 120px;
+		padding: 0;
+	}
+
+	.header__nav > h1 img {
+		width: 80px;
+	}
 	.header__nav > .menu {
 		width: calc(100% - 100px);
 		display: flex;
@@ -216,8 +239,9 @@
 		display: none;
 	}
 	
-	.header__nav .delivery-order {
+	.header__nav > .menu > .delivery-order {
 		width: 168px;
+		text-align: unset;
 	}
 	
 	.header__nav .delivery-order > .button {

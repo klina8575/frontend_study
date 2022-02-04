@@ -4,17 +4,73 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 <title>Document</title>
+<link rel="stylesheet" href="./library/fontawesome-free-5.15.3-web/css/all.min.css">
+<link rel="stylesheet" href="./library/swiper5/swiper.css">
+<link rel="stylesheet" href="./library/animate/animate.css">
 <link rel="stylesheet" href="./css/common.css">
 <link rel="stylesheet" href="./css/main.css">
-<link rel="stylesheet" href="./library/swiper5/swiper.css">
-<link rel="stylesheet" href="./library/fontawesome-free-5.15.3-web/css/all.min.css">
 </head>
 <body>
 	<header class="header">
+		<div class="header__Mnav animate__animated animate__slideInLeft">
+			<div class="trigger">
+				<a href="#" class="mobile close"><i class="fas fa-times fa-lg"></i></a>
+			</div>
+			<div class="Mmenu">
+				<ul class="Mmenu__main">
+					<li>
+						<span>메뉴소개</span>
+						<span><i class="fas fa-chevron-right"></i></span>
+						<ul class="Mlist__drop" style="display: none;">
+							<li><a href="#">스페셜&할인팩</a></li>
+							<li><a href="#">프리미엄</a></li>
+							<li><a href="#">와퍼</a></li>
+							<li><a href="#">주니어&버거</a></li>
+							<li><a href="#">올데이킹&치킨버거</a></li>
+							<li><a href="#">사이드</a></li>
+							<li><a href="#">음료&디저트</a></li>
+							<li><a href="#">독퍼</a></li>
+						</ul>
+					</li>
+					<li>
+						<span>매장소개</span>
+						<span><i class="fas fa-chevron-right"></i></span>
+						<ul class="Mlist__drop">
+							<li><a href="#">매장찾기</a></li>
+						</ul>
+					</li>
+					<li>
+						<span>이벤트</span>
+						<span><i class="fas fa-chevron-right"></i></span>
+						<ul class="Mlist__drop">
+							<li><a href="#">이벤트</a></li>
+							<li><a href="#">신규매장</a></li>
+						</ul>
+					</li>
+					<li onclick="showHide(this)">
+						<span>브랜드스토리</span>
+						<span><i class="fas fa-chevron-right"></i></span>
+						<ul class="Mlist__drop">
+							<li><a href="#">버거킹 스토리</a></li>
+							<li><a href="#">WHY 버거킹</a></li>
+							<li><a href="#">버거킹 NEWS</a></li>
+						</ul>
+					</li>
+					<li onclick="showHide(this)">
+						<span>고객센터</span>
+						<span><i class="fas fa-chevron-right"></i></span>
+						<ul class="Mlist__drop">
+							<li><a href="#">공지사항</a></li>
+							<li><a href="#">버거킹 앱이용안내</a></li>
+							<li><a href="#">FAQ</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
 		<div class="header__nav">
 			<div class="trigger">
 				<a href="#" class="mobile hamburger"><i class="fas fa-bars fa-lg"></i></a>
-				<a href="#" class="mobile close"><i class="fas fa-times fa-lg"></i></a>
 			</div>
 			<h1>
 				<a href="./index.html"><img src="./img/logo.gif" alt="로고" class="logo"></a>

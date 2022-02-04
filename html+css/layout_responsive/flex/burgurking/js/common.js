@@ -84,8 +84,8 @@ window.addEventListener("optimizedResize", function() {
 //     var tets = test.children[2].style.display;
 // });
 
-// const showHide = (e) => {
-//     if (e.children[2].style.display == 'none') {
-//         e.children[2].style.display = 'block'
-//     }
-// }
+const showHide = (e) => {
+    // if (e.children[2].style.display == 'none') {
+        e.children[2].style.display = 'block'
+    // }
+}

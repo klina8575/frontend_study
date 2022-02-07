@@ -57,3 +57,7 @@ a { text-decoration: none !important;
 header, footer, section {
 	box-sizing:border-box;
 }
+
+iframe {
+	width: 100%;
+}

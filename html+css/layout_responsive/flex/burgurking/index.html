@@ -147,7 +147,8 @@
 		</section>
 		<section class="youtube">
 			<div class="youtube__content con">
-				<iframe width="100%" height="605" src="https://www.youtube.com/embed/oDiBd7QpBFY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<!-- 유효성 검사 후 <iframe frameborder="0" … /> ->  style="border:0;" 수정 -->
+				<iframe height="605" src="https://www.youtube.com/embed/oDiBd7QpBFY" title="YouTube video player" style="border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</section>
 		<section class="sns">
@@ -160,7 +161,8 @@
 							</div>
 							<div class="sns-txt">
 								<span>YOUTUBE</span>
-								<button class="button--shape-white"><i class="fab fa-youtube"></i> 구독 4.9만</button>
+								<span class="button--shape-white"><i class="fab fa-youtube"></i> 구독 4.9만</span>
+								<!-- <button class="button--shape-white"><i class="fab fa-youtube"></i> 구독 4.9만</button> -->
 							</div>
 						</a>
 					</li>
@@ -171,7 +173,8 @@
 							</div>
 							<div class="sns-txt">
 								<span>FACEBOOK</span>
-								<button class="button--shape-white"><i class="fas fa-thumbs-up"></i> 좋아요 47.8만</button>
+								<span class="button--shape-white"><i class="fas fa-thumbs-up"></i> 좋아요 47.8만</span>
+								<!-- <button class="button--shape-white"><i class="fas fa-thumbs-up"></i> 좋아요 47.8만</button> -->
 							</div>
 						</a>
 					</li>
@@ -182,7 +185,8 @@
 							</div>
 							<div class="sns-txt">
 								<span>INSTAGRAM</span>
-								<button class="button--shape-white"><i class="fas fa-user"></i> 팔로워 74.9k</button>
+								<span class="button--shape-white"><i class="fas fa-user"></i> 팔로워 74.9k</span>
+								<!-- <button class="button--shape-white"><i class="fas fa-user"></i> 팔로워 74.9k</button> -->
 							</div>
 						</a>
 					</li>

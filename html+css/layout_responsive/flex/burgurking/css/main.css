@@ -91,11 +91,12 @@ section .con {
 	text-align: center;
 }
 
-.content__list > li > a > .sns-txt > button {
+.content__list > li > a > .sns-txt > span:nth-of-type(2) {
 	border-radius: 5px;
 	margin-top: 10px;
-	font-size: 0.7em;
+	font-size: 0.8em;
 	font-weight: bold;	
+	display: inline-block;
 }
 
 .content__list > li {

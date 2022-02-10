@@ -78,6 +78,12 @@
 	box-shadow:0 2px 3px rgba(0, 0, 0, 0.2);
 }
 
+.mobile {
+	border: 0;
+	outline: 0;
+	background-color: transparent;
+}
+
 .header__Mnav > .trigger > .mobile.close {
 	position: absolute;
 	top: 20px;

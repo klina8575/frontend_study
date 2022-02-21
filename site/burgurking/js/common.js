@@ -80,11 +80,11 @@ window.addEventListener("optimizedResize", function() {
 
 const showHide = (e) => {
     const MListDrop = e.children[2];
-    const display = window.getComputedStyle(MListDrop).display;
+    const displayAttr = window.getComputedStyle(MListDrop).display;
 
-    if (display == 'none') {
-        e.children[2].style.display = 'block';
+    if (displayAttr == 'none') {
+        MListDrop.style.display = 'block';
     } else {
-        e.children[2].style.display = 'none';
+        MListDrop.style.display = 'none';
     }
 }

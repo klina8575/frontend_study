@@ -76,16 +76,15 @@ window.addEventListener("optimizedResize", function() {
 
 
 /* 4. 모바일 하위 메뉴 보이기 숨기기 */
-
-// const test = document.querySelector('.test');
-// const test2 = document.querySelector('.test2');
-
-// test.addEventListener('click', () => {
-//     var tets = test.children[2].style.display;
-// });
+//getComputedStyle 사용 이유: https://stackoverflow.com/questions/39679753/javascript-document-getelementbyidel-style-display-returns-empty-string-but
 
 const showHide = (e) => {
-    // if (e.children[2].style.display == 'none') {
-        e.children[2].style.display = 'block'
-    // }
+    const MListDrop = e.children[2];
+    const display = window.getComputedStyle(MListDrop).display;
+
+    if (display == 'none') {
+        e.children[2].style.display = 'block';
+    } else {
+        e.children[2].style.display = 'none';
+    }
 }

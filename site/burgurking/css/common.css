@@ -52,6 +52,8 @@
 }
 
 /* 모바일: 0~766px */
+/* https://codepen.io/tag/submenu */
+/* scss 변환 사이트: https://www.sassmeister.com/ */
 
 .header {
 	position: fixed;
@@ -130,6 +132,12 @@
 	padding: 5px;
 }
 
+/*
+	align-items : flex line을 기준으로 아이템을 정렬한다.
+	align-content: flex line을 정렬한다.(두줄 이상일때만)
+	https://letsgojieun.tistory.com/49
+*/
+
 .header__nav {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -140,12 +148,6 @@
 	align-items: center;
 	padding: 0 12px;
 }
-
-/*
-	align-items : flex line을 기준으로 아이템을 정렬한다.
-	align-content: flex line을 정렬한다.(두줄 이상일때만)
-	https://letsgojieun.tistory.com/49
-*/
 
 .header__nav > div, .header__nav > h1 {
 	width: 33.33%;
@@ -163,17 +165,12 @@
 	text-align: right;
 }
 
-/* .header__mnav > .trigger > .mobile.close {
-	display: none;
-} */
-
 .header__nav .menu__main {
 	display: none;
 }
 
 .header__nav .delivery-order > .button {
 	border-radius: 35px;
-	/* margin-top: 15px; */
 	font-size: 0.5em;
 	/* 우선순위 적용 */
 	padding: 8px;
@@ -181,7 +178,6 @@
 }
 
 .footer{
-	/* height:680px; */
 	height: 350px;
 	background:#2b0200;
 	color: rgb(236, 229, 203);
@@ -224,7 +220,6 @@
 
 .footer__level2 > div {
 	max-width: 1140px;
-	/* margin: 60px auto 0; */
 	display: flex;
 	flex-direction: column;
 }
@@ -301,10 +296,8 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
-		/* margin-top: 20px; */
 		font-size: 1.3em;
 		height: 70px;
-		/* padding-top: 50px; */
 		padding: 50px 60px 0;
 	}
 	
@@ -328,15 +321,10 @@
 		position: relative;
 	}
 
-	/* .header__nav > .menu .main__list:hover .list__drop {
-		display: block;
-	} */
-
 	.header__nav > .menu .main__list .list__drop {
 		display: none;
 		position: absolute;
 		top: 60px;
-		/* background: white; */
 		width: 232px;
 		height: 260px;
 	}
@@ -396,10 +384,6 @@
 }
 
 /* pc: 1024px 이상 */
-@media all and (min-width:1024px){ 
-	/* .footer__level1 {
-		display: block;
-	} */
-	
+@media all and (min-width:1024px){ 	
 
 }

@@ -19,16 +19,3 @@ $(".location").on({
     }
 });
 
-
-// $(window).resize(function() {
-//     var width = $(window).width();
-
-//     if(width <= 767) {
-//         $("#main_top img").attr("src", "https://via.placeholder.com/310x250.png");
-//     } else if (width <= 1023) {
-//         $("#main_top img").attr("src", "https://via.placeholder.com/660x250.png");
-//     } else {
-//         $("#main_top img").attr("src", "https://via.placeholder.com/960x250.png");
-//     }
-// });
-

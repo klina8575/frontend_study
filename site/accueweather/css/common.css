@@ -73,10 +73,6 @@ ul { list-style: none; }
 
 }
 
-#main_header ul.nav > li:nth-child(4), li:nth-child(5) {
-    display: none;
-}
-
 #main_header .setting {
     float: right;
     width: 21px;
@@ -216,9 +212,14 @@ ul { list-style: none; }
     color: white;
 }
 
-#mobile_menu > ul {
-    display: block;
+#mobile_menu > ul.nav {
+    /* display: block; */
 }
+
+#mobile_menu > ul.nav > li {
+    padding: 15px 20px;
+}
+
 /* 미디어 쿼리 */
 @media screen and (max-width: 767px) {
     #main_header {

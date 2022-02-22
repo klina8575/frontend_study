@@ -28,6 +28,7 @@ ul { list-style: none; }
     width: 100%;
     position: fixed;
     z-index: 1;
+    border-bottom: 1px solid #2b2b2b;
 }
 
 #main_header .gnb {
@@ -45,13 +46,31 @@ ul { list-style: none; }
 #main_header ul.nav {
     float: left;
     overflow: hidden;
-    padding-left: 10px;
-    /* width: calc(100% - 217px); */
+    width: calc(100% - 217px);
+    padding: 0 60px;
 }
 
 #main_header ul.nav > li {
     float: left;
-    padding: 22px 17px;
+    padding: 18px 17px;
+    width: 33.33%;
+    text-align: center;
+}
+
+#main_header ul.nav > li:hover > .lnb {
+    display: block;
+}
+
+#main_header ul.nav > li > .lnb {
+    padding: 27px 0;
+    background:#000;
+    height: 167px;
+    display: none;
+}
+
+#main_header ul.nav > li > .lnb > li {
+    padding: 3px;
+
 }
 
 #main_header ul.nav > li:nth-child(4), li:nth-child(5) {
@@ -77,62 +96,10 @@ ul { list-style: none; }
     display: none;
 }
 
-/* active_path, active bar */
-
-#main_header > .active_path {
-    position: fixed;
-    width: 100%;
-    height: 1px;
-    background: #D8D8D8;
-    top: 60px;
-    z-index: 1;
-}
-
-#main_header > .active_path > .active_bar {
-    width: 81px;
-    height: 1px;
-    margin: 0px; 
-    background: tomato;
-    display: none;
-}
-
-/* 하위 메뉴 */
-
-#main_header .lnb_container {
-    display: none;
-    background: rgb(34, 34, 34);
-    height: 60px;
-    width: 100%;
-    position: fixed;
-    top: 61px;
-    z-index: 1; 
-}
-
-#main_header .lnb_container > .lnb {
-    overflow: hidden;
-    margin: 0 auto;
-    display: none;
-}
-
-#main_header .lnb_container > .lnb > li {
-    float: left;
-    margin: 20px 10px 0 10px;
-}
-
-.show {
-    display: block;
-}
-
-.hide {
-    display: none;
-}
+/* fade in effect */
 
 .appear {
     animation: fade-in 0.5s;
-}
-
-.disappear {
-    animation: fade-out 0.5s;
 }
 
 @keyframes fade-in {
@@ -144,13 +111,31 @@ ul { list-style: none; }
     }
   }
   
-@keyframes fade-out {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
+
+
+/* underline effect */
+
+  .underline {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .underline:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: tomato;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .underline:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
   }
 
 /* 검색 창 */
@@ -208,7 +193,6 @@ ul { list-style: none; }
 #main_footer > div:nth-child(2) > div {
     /* width: 100vw; 를 사용하지 않도록 주의: 스크롤이 생긴다 */
     width: 100%;
-    /* margin: 0 auto; */
     font-size: 13px;
     text-align: center;
 }
@@ -223,11 +207,10 @@ ul { list-style: none; }
     width: 100vw;
     /* vw, vh를 사용시 스크롤 현상이 생기는 것 방지 */
     /* overflow: hidden;    */
-    /* position: fixed; */
-    /* top: 61px; */
+    position: fixed;
+    top: 60px;
+    z-index: 100;
 }
-
-/* html, body { height: 100%;} */
 
 #mobile_menu a {
     color: white;
@@ -299,7 +282,7 @@ ul { list-style: none; }
         background-size: cover;
     }
 
-    #main_header .gnb, .lnb {
+    #main_header .gnb {
         width: 960px;
     }
 }

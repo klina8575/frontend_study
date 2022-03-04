@@ -78,7 +78,7 @@ window.addEventListener("optimizedResize", function() {
 /* 4. 모바일 하위 메뉴 보이기 숨기기 */
 //getComputedStyle 사용 이유: https://stackoverflow.com/questions/39679753/javascript-document-getelementbyidel-style-display-returns-empty-string-but
 
-const showHide = (e) => {
+const showHide = e => {
     const MListDrop = e.children[2];
     const displayAttr = window.getComputedStyle(MListDrop).display;
 

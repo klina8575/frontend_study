@@ -5,6 +5,11 @@
     <title>플렉서블 박스 레이아웃</title>
     <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
     <style>
+      /* 
+        flex-grow 늘릴비율
+        flex-shrink 줄일비율
+        flex-basis 기본크기
+      */
       .container {
         width:100%;
         height:150px;
@@ -15,18 +20,23 @@
         margin-bottom:20px;
       }      
       .box1{
+        /* 값이 하나, 단위 없는경우 flex-grow */
         flex:2;    
       }
       .box2{
+        /* 값이 하나, 단위가 있을때 flex-basis */
         flex:30px;         
       }
       .box3{
+        /* 값이 두개, 단위가 없는 값은 flex-grow, 단위가 있는 값은 flex-basis */
         flex:1 40px;         
       } 
       .box4{
+        /* 값이 두개, 단위가 둘다 없는 값은 순서대로 flex-grow, flex-shrink */
         flex:1 1;  
       }      
       .box5{
+        /* 값이 세개, 단위가 셋다 없는 값은 순서대로 flex-grow, flex-shrink, flex-basis */
         flex:2 2 0;        
       }                           
       .box {

@@ -5,6 +5,7 @@
 * {
     margin: 0; padding: 0;
     font-family: Arial, 'san-serif';
+    box-sizing: border-box;
 }
 a { text-decoration: none !important; }
 img { border: 0; }
@@ -35,19 +36,75 @@ ul { list-style: none; }
     overflow: hidden;
     position: relative;
     margin: 0 auto;
+    width: 960px;
 }
 
-#main_header .gnb .logo {
+#main_header .logo {
     float: left;
     width: 190px;
     margin-top: 12px;
 }
 
-#main_header .gnb ul.nav {
+#main_header ul.nav {
     float: left;
     overflow: hidden;
     padding: 0 60px;
-    width: calc(100% - 217px);
+    width: calc(100% - 213px);
 }
 
+#main_header ul.nav > li {
+    float: left;
+    padding: 18px 17px;
+    width: 33.33%;
+    text-align: center;
+}
+
+#main_header ul.nav > li > .lnb {
+    padding: 27px 0;
+    background: black;
+    height: 167px;
+    display: none;
+}
+
+#main_header ul.nav > li:hover > .lnb {
+    display: block;
+}
+
+#main_header ul.nav > li:hover > .lnb > li {
+    padding: 3px;
+}
+
+#main_header .setting {
+    float: right;
+    width: 23px;
+    text-align: right;
+    padding-top: 12px;
+}
+
+#main_header .trigger {
+    float: right;
+    width: 23px;
+    text-align: right;
+    padding-top: 4px;
+    display: none;
+}
+
+#main_header .trigger .close {
+    display: none;
+}
+
+/* fade in 애니메이션 정의 */
+
+.appear {
+    animation: fade-in 0.5s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
 

@@ -19,6 +19,7 @@
           console.log(`안녕 ${this.name} 너의 나이는 ${this.age}살이다`);
         }
 
+        static phone = "01022223333";
         //정적 함수
         static compareAge() {
           console.log(`static 메소드 입니다`);
@@ -32,6 +33,7 @@
         }
       }
 
+      console.log(MyClass.phone);
       MyClass.compareAge();
       const profile = new UserProfile("영희", 22);
 

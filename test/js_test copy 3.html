@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<script>
+const arr1 = "김하서". arr2="인천", arr3="010-1232-1233";
+
+// case1
+// const arr = new Array();
+// arr[0] = "김하서";
+// arr[1] = "인천";
+// arr[2] = "010-1232-1233";
+
+//case2
+// const arr = new Array("김하서", "인천", "010-1232-1233");
+
+//case3
+const arr = ["김하서", "인천", "010-1232-1233"];
+console.log(arr[1]);
+
+// arr[1] = "서울";
+
+// console.log(arr);
+const obj = {
+    name: arr,
+    region: "인천",
+    phone: "010-1232-1233",
+    height: 160
+}
+
+const arr2 = obj.name;
+
+console.log(arr2[1]);
+</script>
+</body>
+</html>

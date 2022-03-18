@@ -21,22 +21,66 @@ const arr1 = "김하서". arr2="인천", arr3="010-1232-1233";
 // const arr = new Array("김하서", "인천", "010-1232-1233");
 
 //case3
-const arr = ["김하서", "인천", "010-1232-1233"];
-console.log(arr[1]);
+// const arr = ["김하서", "인천", "010-1232-1233"];
+// console.log(arr[1]);
 
 // arr[1] = "서울";
 
 // console.log(arr);
-const obj = {
-    name: arr,
-    region: "인천",
-    phone: "010-1232-1233",
-    height: 160
-}
+// const obj = {
+//     name: arr,
+//     region: "인천",
+//     phone: "010-1232-1233",
+//     height: 160
+// }
 
-const arr2 = obj.name;
+// const arr2 = obj.name;
 
-console.log(arr2[1]);
+// console.log(arr2[1]);
+
+
+
+
+// 함수 정의(ES5) ver1
+function add(num1, num2) {
+    const result = num1 + num2;
+    return result;
+} 
+
+//함수 정의(ES5) ver2
+const addFnc = function(num1, num2) {
+    const result = num1 + num2;
+    return result;
+};
+
+//함수 정의(ES6) 
+const addFnc2 = (num1, num2) => {
+    const result = num1 + num2;
+    //return을 만나면 함수를 빠져나온다.
+    console.log("안녕하세요!");
+    return result;
+}; 
+const a = 1, b = 2;
+
+const result1 = add(a, b);
+document.write(result1, "<br />");
+const result2 = addFnc(a, b);
+document.write(result2, "<br />");
+const result3 = addFnc2(a, b);
+document.write(result3, "<br />");
+
+
+
+
+//호이스팅(끌어 올리다)
+
+// function sum() {
+//     console.log(arguments[0]) 
+// }
+
+// sum(10, 20, 30)
+
+
 </script>
 </body>
 </html>

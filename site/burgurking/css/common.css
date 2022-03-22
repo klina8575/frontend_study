@@ -269,13 +269,13 @@
 
 /* 테블릿: 767px 이상*/
 @media all and (min-width:767px){
+	.header__Mnav {
+		display: none;
+	}
+
 	.header__nav {
 		height: 120px;
 		padding: 0;
-	}
-
-	.header__Mnav {
-		display: none;
 	}
 
 	.header__nav > h1 img {

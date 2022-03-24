@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>버거킹</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 	<link rel="stylesheet" href="./library/fontawesome-free-5.15.3-web/css/all.min.css">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
@@ -131,7 +132,16 @@
 	<div class="wrap">
 		<section class="slider">
 			<div class="slider__content con">
-				<!-- <img src="./img/slider.png" alt="" srcset=""> -->
+				<div class="swiper main-swiper">
+					<div class="swiper-wrapper">
+					  <div class="swiper-slide">slide 1</div>
+					  <div class="swiper-slide">Slide 2</div>
+					  <div class="swiper-slide">Slide 3</div>
+					</div>
+					<div class="swiper-button-next"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-pagination"></div>
+				</div>
 			</div>
 		</section>
 		<section class="youtube">
@@ -170,6 +180,7 @@
 		</section>
 	</div>
 	<footer class="footer"></footer>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="./js/common.js"></script>
 <script src="./js/main.js"></script>
 </body>

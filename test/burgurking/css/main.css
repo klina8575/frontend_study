@@ -2,7 +2,7 @@
 
 .wrap{
 	background: wheat;
-	padding-top: 120px;
+	padding-top: 60px;
 }
 
 section .con {
@@ -15,9 +15,9 @@ section .con {
 	height: 480px;
 } */
 
-.slider__content {
+/* .slider__content {
 	background: thistle;
-}
+} */
 
 .slider__content .swiper {
 	width: 100%;
@@ -42,6 +42,24 @@ section .con {
 	-ms-flex-align: center;
 	-webkit-align-items: center;
 	align-items: center;
+}
+
+.slider__content .swiper-slide.slide1 {
+	background: url('../img/slide1_S.png');
+	background-size: cover;
+	background-position: center;
+}
+
+.slider__content .swiper-slide.slide2 {
+	background: url('../img/slide2_S.png');
+	background-size: cover;
+	background-position: center;
+}
+
+.slider__content .swiper-slide.slide3 {
+	background: url('../img/slide3_S.png');
+	background-size: cover;
+	background-position: center;
 }
 
 .youtube{
@@ -128,6 +146,10 @@ section .con {
 
 /* 테블릿: 767px 이상*/
 @media all and (min-width:767px){
+	.wrap {
+		padding-top: 120px;
+	}
+
 	.guide__content {
 		flex-direction: row;
 	}
@@ -135,9 +157,33 @@ section .con {
 	.store__content ul li {
 		width: 16.66%;
 	}
+
+	.slider__content .swiper {
+		height: 380px;
+	}
+
+	.slider__content .swiper-slide.slide1 {
+		background: url('../img/slide1.png');
+		background-size: cover;
+		background-position: center;
+	}
+	
+	.slider__content .swiper-slide.slide2 {
+		background: url('../img/slide2.png');
+		background-size: cover;
+		background-position: center;
+	}
+	
+	.slider__content .swiper-slide.slide3 {
+		background: url('../img/slide3.png');
+		background-size: cover;
+		background-position: center;
+	}
 }
 
 /* pc: 1024px 이상 */
 @media all and (min-width:1024px){ 
-
+	.slider__content .swiper {
+		height: 480px;
+	}
 }

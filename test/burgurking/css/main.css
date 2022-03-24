@@ -221,8 +221,23 @@ section .con {
 }
 
 .banner__content {
-	background: gray;
+	background-image: url('../img/bg_home_cs.png');
+	background-size: cover;
+	background-position: center;
+	color: white;
+	display: flex;
+	flex-direction: column;
 }
+
+.banner__content > .order-text {
+	padding: 40px 30px 10px;
+}
+
+.banner__content > .phone{
+	font-size: 2.5rem;
+	padding-left: 30px;
+}
+
 
 /* 테블릿: 767px 이상*/
 @media all and (min-width:767px){
@@ -317,6 +332,40 @@ section .con {
 	.store__content > .search > ul li > em {
 		font-size: 1.4rem;
 	}
+
+	.banner__content {
+		flex-direction: row;
+	}
+	.banner__content > .order-text {
+		/* 630px ÷ 1140px */
+		width: 55.26%;
+		/* 50px ÷ 1140px */
+		padding: 0 0 0 4.38%;
+	}
+
+	.banner__content > .order-text > h1 {
+		font-size: 2.3rem;
+		padding-top: 60px;
+	}
+
+	.banner__content > .order-text > p {
+		font-size: 1.3rem;
+		display: inline;
+	}
+
+	.banner__content > .order-text > p:nth-of-type(2):before {
+		content: '/ ';
+	}
+
+	.banner__content > .phone {
+		/* 410px ÷ 1140px */
+		width: 36.96%;
+		/* 50px ÷ 1140px */
+		padding-right: 4.38% ;
+		padding-top: 75px;
+		text-align: center;
+	}
+
 	
 }
 

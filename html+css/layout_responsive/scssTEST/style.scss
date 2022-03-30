@@ -7,13 +7,16 @@ nav{
     ul > {
         li {
             margin: 10px;
+            &:last-child {
+                padding: 10px;
+            }
         }
     }
 
 
-    a {
-        color: palegreen;
-    }
+    // a {
+    //     color: red;
+    // }
 }
 
 // 정의

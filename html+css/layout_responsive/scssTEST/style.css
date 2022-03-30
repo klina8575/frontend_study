@@ -10,8 +10,8 @@ p {
 nav ul > li {
   margin: 10px;
 }
-nav a {
-  color: palegreen;
+nav ul > li:last-child {
+  padding: 10px;
 }
 
 span.emoji-women-holding-hands {

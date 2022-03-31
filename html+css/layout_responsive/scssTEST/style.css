@@ -13,6 +13,9 @@ nav ul > li {
 nav ul > li:last-child {
   padding: 10px;
 }
+a {
+  color: antiquewhite;
+}
 
 span.emoji-women-holding-hands {
   font-family: IconFont;

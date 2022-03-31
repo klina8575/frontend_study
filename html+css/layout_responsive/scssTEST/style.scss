@@ -10,6 +10,9 @@ nav{
             &:last-child {
                 padding: 10px;
             }
+            @at-root a {
+                color: antiquewhite;
+                }     
         }
     }
 
